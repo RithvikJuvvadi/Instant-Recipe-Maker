@@ -1,0 +1,151 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Toggle Button Style */
+.toggle-button {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+/* Style for Show Password Checkbox */
+#show-password {
+    margin-top: 10px; /* Add some space above the checkbox */
+}
+
+
+/* Profile Picture and Notification Bell */
+.profile-notification-container {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.notification-bell {
+    width: 30px;
+    height: 30px;
+}
+
+/* Background and Layout */
+body {
+    background: url('../images/login.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.login-box, .signup-box, .forgot-box {
+    background-color: #ffffffcc;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 15px 0; /* Added margin for spacing */
+}
+
+/* Headings and Text */
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #070707;
+}
+
+/* Links Styling */
+a {
+    text-decoration: none;
+    color: #007bff; /* Default color for links */
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff0000; /* Red on hover */
+}
+
+/* Specific Classes for Text */
+.signup-text,
+.back-to-login,
+.forgot-password {
+    margin: 15px 0; /* Added spacing between elements */
+    font-size: 0.9rem;
+    color: #363535;
+}
+
+/* Form Elements */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #f9f9f9;
+    color: #101010;
+}
+
+input::placeholder {
+    color: #131212;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Description Class Update */
+.description {
+    color: darkblue; /* Updated color */
+    font-size: 1.1em; /* Corrected size */
+    margin: 20px 0; /* Increased space above and below */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .login-box, .signup-box, .forgot-box {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}
